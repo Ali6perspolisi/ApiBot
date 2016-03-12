@@ -5,7 +5,7 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = " "--توکن بوت را درون " قرار دهید --
+local bot_api_key = "142563246:AAERQZBwJIppGlJLwHhAJc1gT2dOH9wQjdY"--توکن بوت را درون " قرار دهید --
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[
@@ -21,21 +21,21 @@ hi :)
 - _test_
 
 /hyper [[text](url)](url)
-- [BeatBot](BeatBot.ir)
+- [Admin](https://telegram.me/mikail)
 
 *EXAMPLE*
 
 /hyper [`Hi`]
 [*I'm a api bot* ]
-[_BeatBot Team created me_]
-[[BeatBot Channel](test)][(http://telegram.me/beatbot_team)]
+[_Mikail created me_]
+[[Admin Channel](Channel)][(http://telegram.me/pluginlua)]
 
 *RESULT*
 
 `Hi`
 *I'm a api bot* 
-_BeatBot Team created me_
-[BeatBot Channel](http://telegram.me/beatbot_team)
+_Mikail created me_
+[Channel](http://telegram.me/pluginlua)
 
 *OTHER*
 
@@ -57,7 +57,7 @@ _TNX TO USE ME :)_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {94746365}-- put your id here
+  local admins = {136888679}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
@@ -207,7 +207,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nBeatBot hyper bot :)\nthx to @imandaneshi\neditor: @amirho3inf \nchannel : @BeatBot_Team"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nhyper bot :)\nthx to @imandaneshi\neditor: @amirho3inf \nSudo : @Mikail"
 
 	print(bot_info)
 
@@ -263,7 +263,7 @@ function msg_processor(msg)
 
 elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
  sendMessage(msg.chat.id, start, true, false, true)
-  sendMessage(msg.chat.id, [[[ربات خودتونو بسازید :)](http://telegram.me/beatbot_team)]], true, false, true)
+  sendMessage(msg.chat.id, [[[ربات خودتونو بسازید :)](http://telegram.me/pluginlua)]], true, false, true)
 return end
 
 end
