@@ -5,7 +5,7 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = "loc"--توکن بوت را درون " قرار دهید --
+local bot_api_key = "252531700:AAHNfbG5YQiqqBAkpnrsJlwFT3YohsO1JsE"--توکن بوت را درون " قرار دهید --
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[
@@ -27,15 +27,15 @@ hi :)
 
 /hyper [`Hi`]
 [*I'm a api bot* ]
-[_Mikail created me_]
-[[Admin Channel](Channel)][(http://telegram.me/pluginlua)]
+[_@Ali6perspolisi created me_]
+[[For more information Join This channel](Channel)][(http://telegram.me/Apadana_Team)]
 
 *RESULT*
 
 `Hi`
 *I'm a api bot* 
-_Mikail created me_
-[Channel](http://telegram.me/pluginlua)
+_@Ali6perspolisi created me_
+[Channel](http://telegram.me/Apadana_Team)
 
 *OTHER*
 
@@ -57,7 +57,7 @@ _TNX TO USE ME :)_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {94746365}-- put your id here
+  local admins = {196253487}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
@@ -207,7 +207,7 @@ function bot_run()
 
 	bot = bot.result
 
-	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nhyper bot :)\nthx to @imandaneshi\neditor: @amirho3inf \nSudo : @Mikail"
+	local bot_info = "Username = @"..bot.username.."\nName = "..bot.first_name.."\nId = "..bot.id.." \nhyper bot :)\ntnx to novinvps :)\neditor: @Ali6perspolisi \nSudo : @Ali6perspolisi"
 
 	print(bot_info)
 
@@ -263,7 +263,7 @@ function msg_processor(msg)
 
 elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
  sendMessage(msg.chat.id, start, true, false, true)
-  sendMessage(msg.chat.id, [[[ربات خودتونو بسازید :)](http://telegram.me/pluginlua)]], true, false, true)
+  sendMessage(msg.chat.id, [ اپادانا تیم:)](http://telegram.me/Apadana_Team)]], true, false, true)
 return end
 
 end
