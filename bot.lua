@@ -5,7 +5,7 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = "252531700:AAHNfbG5YQiqqBAkpnrsJlwFT3YohsO1JsE"--توکن بوت را درون " قرار دهید --
+local bot_api_key = "TOKEN"--توکن بوت را درون " قرار دهید --
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[
@@ -21,7 +21,7 @@ hi :)
 - _test_
 
 /hyper [[text](url)](url)
-- [Admin](https://telegram.me/mikail)
+- [Admin](https://telegram.me/Ali6perspolisibot)
 
 *EXAMPLE*
 
@@ -57,7 +57,7 @@ _TNX TO USE ME :)_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {196253487}-- put your id here
+  local admins = {YOUR ID}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
@@ -263,7 +263,8 @@ function msg_processor(msg)
 
 elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
  sendMessage(msg.chat.id, start, true, false, true)
-  sendMessage(msg.chat.id, [ اپادانا تیم:)](http://telegram.me/Apadana_Team)]], true, false, true)
+  local apadana = "[Apadana Team](telegram.me/Apadana_team)"
+  sendMessage(msg.chat.id, apadana, true, false, true)
 return end
 
 end
@@ -281,3 +282,6 @@ while is_running do -- Start a loop witch receive messages.
 
 end
 print("Bot halted")
+
+--End 284 LINE Api Bot By @ALI6PERSPOLISI
+--chaneel : @Apadana_Team
