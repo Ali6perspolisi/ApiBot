@@ -18,8 +18,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 Clone the bot
 
 ```
-git clone https://github.com/BeatBotTeam/Api-Telegram-Bot.git
-cd Api-Telegram-Bot
+git clone https://github.com/Ali6perspolisi/apiBot.git
+cd apiBot
 
 ```
 
